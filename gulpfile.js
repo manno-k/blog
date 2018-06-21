@@ -46,7 +46,7 @@ var path = {
     'styleGuidePort': '4000',
     // browser sync
     // .localでは遅くなるため注意
-    'host': '',
+    'host': 'blog.io/',
     'https': true,
 }
 
