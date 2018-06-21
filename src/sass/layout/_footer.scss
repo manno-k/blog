@@ -1,3 +1,13 @@
 /*
 l-footer
  */
+.l-footer {
+  position: sticky;
+  bottom:0;
+  margin-bottom: -3px;
+  p{
+    @extend .m-0;
+    font-size: 2rem;
+    transform: rotateZ(180deg);
+  }
+}

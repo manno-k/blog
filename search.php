@@ -9,8 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main class="l-page barba-container">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -44,8 +43,6 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
-
 <?php
 get_sidebar();
 get_footer();

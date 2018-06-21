@@ -31,13 +31,19 @@ Theme Sass file
  */
 // foundation
 @import 'foundation/variable';
-@import "foundation/mixin"; // object
+@import "foundation/mixin";
+// object
 @import "object/utility/utility";
 @import "object/compornent/nav";
-@import "object/compornent/sidebar"; // layout
+@import "object/compornent/sidebar";
+// layout
 @import "layout/header";
-@import "layout/footer"; // project
+@import "layout/footer";
+@import "layout/page";
+@import "layout/single";
+// project
 @import "object/project/front";
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -140,6 +146,7 @@ mark {
 big {
   font-size: 125%;
 }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -209,6 +216,7 @@ table {
   margin: 0 0 1.5em;
   width: 100%;
 }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -293,6 +301,7 @@ select {
 textarea {
   width: 100%;
 }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -321,6 +330,7 @@ a:active,
 a:hover {
   outline: 0;
 }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -375,11 +385,13 @@ a:hover {
   display: block;
   text-decoration: none;
 }
+
 /* Small menu. */
 .main-navigation.toggled ul,
 .menu-toggle {
   display: block;
 }
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
@@ -411,6 +423,7 @@ a:hover {
   text-align: right;
   width: 50%;
 }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -450,10 +463,12 @@ a:hover {
   z-index: 100000;
   /* Above WP toolbar. */
 }
+
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
   outline: 0;
 }
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
@@ -475,6 +490,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -503,6 +519,7 @@ a:hover {
 .site-header:after {
   clear: both;
 }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -514,6 +531,7 @@ a:hover {
 .widget select {
   max-width: 100%;
 }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -542,6 +560,7 @@ a:hover {
   clear: both;
   margin: 0 0 1.5em;
 }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -552,6 +571,7 @@ a:hover {
 .bypostauthor {
   display: block;
 }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -561,10 +581,12 @@ a:hover {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
+
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
   display: block;
 }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -576,16 +598,19 @@ a:hover {
   margin-top: 0;
   padding: 0;
 }
+
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
   max-width: 100%;
 }
+
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
   display: inline-block;
 }
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -607,6 +632,7 @@ object {
 .wp-caption-text {
   text-align: center;
 }
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/

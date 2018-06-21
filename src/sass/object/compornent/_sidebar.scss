@@ -1,3 +1,8 @@
 /*
 c-sidebar
  */
+.c-sidebar {
+  @extend .col-12;
+  @extend .col-md-4;
+  @include typo;
+}

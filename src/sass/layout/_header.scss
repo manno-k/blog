@@ -1,6 +1,11 @@
 /*
 l-header
  */
-.l-header{
-
+.l-header {
+  position: sticky;
+  top:0;
+  margin-top: -3px;
+  .c-nav-nav{
+    text-align: right;
+  }
 }

@@ -1,3 +1,45 @@
 /*
 c-nav
  */
+.c-nav{
+  border-top: 3px solid $base-black;
+  border-bottom: 3px solid $base-black;
+  z-index: 10;
+  background-color: $base-white;
+
+  @include link_color($base-black) {
+    text-decoration: none;
+  }
+  &-wrap {
+    @extend .container;
+  }
+  &-logo {
+    @extend .col-6;
+    font-size: 1.5rem;
+    @include hover__underline;
+  }
+  &-nav {
+    @extend .col-6;
+    @extend .align-self-center;
+    @extend .hidden-sm-down;
+    font-size: 1.2rem;
+    ul {
+      @extend .m-0;
+      @extend .p-0;
+      li {
+        list-style: none;
+        display: inline-block;
+        @include hover__underline;
+        &:before {
+          content: "/";
+          padding: 0 10px;
+        }
+
+        &:last-child:after {
+          content: "/";
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
