@@ -15,8 +15,12 @@ c-nav
   }
   &-logo {
     @extend .col-6;
-    font-size: 1.5rem;
-    @include hover__underline;
+    //@include hover__underline;
+    p,h1{
+      @extend .m-0;
+      font-size: 3rem;
+
+    }
   }
   &-nav {
     @extend .col-6;

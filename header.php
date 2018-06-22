@@ -59,5 +59,5 @@
 		</div>
 	</div>
 </header><!-- #masthead -->
-<div class="container">
-	<div id="barba-wrapper" class="row py-4">
+<div id="barba-wrapper" class="container">
+	<div  class="row py-4 barba-container">

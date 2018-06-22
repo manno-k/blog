@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<main class="container">
+	<main  class="l-page ">
 
 		<?php
 		while ( have_posts() ) : the_post();

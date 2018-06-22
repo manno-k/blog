@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<main  class="l-page barba-container">
+	<main  class="l-page">
 		<?php
 		if ( have_posts() ) :
 
