@@ -14,7 +14,7 @@ c-nav
     @extend .container;
   }
   &-logo {
-    @extend .col-6;
+    @extend .col-5;
     //@include hover__underline;
     p,h1{
       @extend .m-0;
@@ -23,7 +23,7 @@ c-nav
     }
   }
   &-nav {
-    @extend .col-6;
+    @extend .col-7;
     @extend .align-self-center;
     @extend .hidden-sm-down;
     font-size: 1.2rem;
@@ -43,6 +43,13 @@ c-nav
           content: "/";
           padding: 0 10px;
         }
+      }
+    }
+    &__bottom{
+      @extend .col-7;
+      display: block!important;
+      a{
+        vertical-align: center;
       }
     }
   }

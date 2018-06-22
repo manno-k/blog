@@ -70,8 +70,9 @@ gulp.task('uglify', function () {
 
 gulp.task("concat", function () {
     return gulp.src([
-        '',
-        ''
+        'barba.js',
+        'barba-custom.js',
+        'smooth-scroll.js'
     ])
         .pipe($.plumber())
         .pipe($.concat("minified.js"))
