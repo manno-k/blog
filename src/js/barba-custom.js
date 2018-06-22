@@ -66,13 +66,12 @@ jQuery(function ($) {
         fadeOut: function () {
             //古いページコンテンツに対して行う処理。
             //ここでは、animateを使って、fadeoutさせている。
-            return $(this.oldContainer).animate({opacity: 0}, {duration: 'fast'}).promise();
+             $(this.oldContainer).animate({opacity: 0}, {duration: 'slow'}).promise();
+             $('.js-loader').css('display', 'none').fadeIn(1000).promise();
         },
 
         fadeIn: function () {
-            // topに移動(地味に重要)
             document.scrollingElement.scrollTop = 0;
-
             //startに記述したallによって、fadeOutが終わったらこのfadeIn関数が呼び出されている。
 
             var _this = this;
@@ -88,7 +87,7 @@ jQuery(function ($) {
                 visibility: 'visible',
                 opacity: 0
             });
-
+            $('.js-loader').css('display', 'none').fadeOut(1000).promise();
             $el.animate({opacity: 1}, 200, function () {
                 //.done()をつけることで古いbarba-containerのDOMは削除され、transitionが終了する。
                 _this.done();

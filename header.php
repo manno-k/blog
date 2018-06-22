@@ -59,5 +59,8 @@
 		</div>
 	</div>
 </header><!-- #masthead -->
+<div class="js-loader js-type">
+	now loading....
+</div>
 <div id="barba-wrapper" class="container">
 	<div  class="row py-4 barba-container">

@@ -1,3 +1,11 @@
 #js-top{
   cursor: pointer;
 }
+.js-loader{
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
