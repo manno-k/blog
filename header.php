@@ -22,9 +22,9 @@
 
 <body <?php body_class(); ?>>
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wordpress_template' ); ?></a>
-
-<header id="masthead" class="l-header c-nav">
-	<div class="c-nav-wrap">
+<span class="js-header__border top"></span>
+<header id="masthead" class="l-header c-nav js-header">
+	<div class="c-nav-wrap ">
 		<div class="row">
 			<div class="c-nav-logo">
 				<?php
@@ -56,11 +56,33 @@
 				) );
 				?>
 			</nav><!-- #site-navigation -->
+			<nav class="c-nav-nav__sp">
+				<nav class="js-fixed-header">
+					<button type="button" class="navbar-toggle collapsed js-offcanvas-btn">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="hiraku-open-btn-line"></span>
+					</button>
+				</nav><!-- /.navbar -->
+				<div class="row-offcanvas row-offcanvas-right">
+					<div class="sidebar-offcanvas" id="sidebar">
+						<div class="list-group js-offcanvas">
+							<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'primary-menu',
+							) );
+							?>
+						</div>
+					</div><!--/.sidebar-offcanvas-->
+				</div><!--/row-->
+			</nav>
 		</div>
 	</div>
 </header><!-- #masthead -->
+
+
 <div class="js-loader js-type">
 	now loading....
 </div>
 <div id="barba-wrapper" class="container">
-	<div  class="row py-4 barba-container">
+	<div class="row py-4 barba-container">

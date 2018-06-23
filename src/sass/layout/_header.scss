@@ -3,9 +3,10 @@ l-header
  */
 .l-header {
   position: sticky;
-  top:0;
-  margin-top: -3px;
-  .c-nav-nav{
+  top: 0;
+  margin-top: -5px;
+
+  .c-nav-nav {
     text-align: right;
   }
 }

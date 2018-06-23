@@ -1,0 +1,33 @@
+/*
+ * Hiraku Ver.1.0.2 (https://www.appleple.com)
+ * Copyright appleple | MIT License
+ *
+ */
+
+//変数
+@import "variables";
+//基本機能
+@import "base";
+//コンポーネント
+@import "button";
+@media screen and (min-width: 768px) {
+  .js-hiraku-offcanvas {
+    display: block;
+    position: static;
+    background: none;
+  }
+
+  .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
+    position: static;
+    margin-left: 0;
+    width:auto;
+  }
+}
+
+.js-hiraku-offcanvas-body-right .js-hiraku-header-fixed {
+  margin-left: -70%;
+}
+
+.js-hiraku-offcanvas-body-right {
+  left:0;
+}

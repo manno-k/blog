@@ -17,31 +17,6 @@ mixinをまとめています。
   }
 }
 
-@mixin hover__underline {
-  a {
-    display: inline-block;
-    padding-bottom: 4px;
-    position: relative;
-
-    &::after {
-      background-color: $base-black;
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 2px;
-      position: absolute;
-      transition: .3s all;
-      width: 0;
-    }
-
-    &:hover {
-      text-decoration: none;
-      &:after {
-        width: 100%;
-      }
-    }
-  }
-}
 
 @mixin before_text($content){
   &:before {
@@ -53,45 +28,4 @@ mixinをまとめています。
     display: inline;
   }
   @content;
-}
-
-@mixin typo {
-  @include link_color($base-black);
-  @include hover__underline;
-  line-height: 1.6rem;
-  h1,h2,h3,h4,h5,h6{
-    padding-bottom: 1rem;
-  }
-  h1{
-    font-size: 2rem;
-    @include before_text("#");
-  }
-  h2 {
-    font-size: 1.7rem;
-    @include before_text("##");
-  }
-  h3{
-    font-size: 1.6rem;
-    @include before_text("###");
-  }
-  h4{
-    font-size: 1.5rem;
-    @include before_text("####");
-  }
-  h5{
-    font-size: 1.4rem;
-    @include before_text("#####");
-  }
-  h6 {
-    font-size: 1.3rem;
-    @include before_text("######");
-  }
-  ul {
-    @extend .m-0;
-    @extend .p-0;
-    li {
-      list-style: none;
-      @include before_text("-");
-    }
-  }
 }
