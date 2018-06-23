@@ -22,7 +22,7 @@
 				<a href="https://www.instagram.com/rundy_k/" target="_blank">
 					<i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i>
 				</a>
-				<a href="<?php echo site_url('/contact'); ?>">
+				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">
 					<i class="fa fa-envelope-o fa-2x fa-fw" aria-hidden="true"></i>
 				</a>
 			</nav>

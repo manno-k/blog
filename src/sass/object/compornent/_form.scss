@@ -1,0 +1,17 @@
+.wpcf7 {
+  [role=button], a, area, button, input, label, select, summary, textarea {
+    width: 100%;
+    max-width: 320px;
+  }
+  button, input[type=button], input[type=reset], input[type=submit]{
+    background-color: $base-white;
+    border-radius: 0;
+    font-size: 1.5rem;
+    transition: .5s;
+    cursor: pointer;
+    &:hover{
+      background-color: $base-black;
+      color: $base-white;
+    }
+  }
+}

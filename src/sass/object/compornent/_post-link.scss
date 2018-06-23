@@ -1,0 +1,46 @@
+.c-post-link {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .flex-wrap;
+  a {
+    border-bottom: 0 !important;
+    display: block;
+    padding: 15px;
+    margin: -15px;
+  }
+  .left {
+    margin-bottom: 1rem;
+    @include media-breakpoint-up(md) {
+      margin-bottom: auto;
+    }
+  }
+  .right {
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+  .left, .right {
+    flex-basis: 100%;
+    background-color: $base-black;
+    padding: 1rem;
+    i{
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: .5s;
+    }
+    &:hover{
+      i{
+        width: 20px;
+        opacity: 10;
+        transition: .5s;
+
+      }
+    }
+    @include link_color($base-white);
+    @include media-breakpoint-up(md) {
+      flex-basis: 45%;
+    }
+  }
+
+}
