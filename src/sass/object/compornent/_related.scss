@@ -1,0 +1,30 @@
+.c-related {
+  h2 {
+    @extend .m-0;
+    color: $base-white;
+  }
+  dt{
+    background-color: $base-white;
+    color: $base-black;
+    text-align: center;
+    img{
+      width: 100%;
+      max-width: 300px;
+    }
+    i{
+      &:before{
+        font-size: 30vw;
+        @include media-breakpoint-up(md){
+          font-size: 10rem;
+        }
+      }
+    }
+  }
+  dd {
+    @extend .m-0;
+    border-top: 1px solid $base-black;
+    &:first-child {
+      background-color: $base-black;
+    }
+  }
+}

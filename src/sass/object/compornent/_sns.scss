@@ -1,0 +1,31 @@
+.c-sns {
+  ul {
+    &:before {
+      content: "===";
+      display: block;
+    }
+    @extend .m-0;
+    @extend .p-0;
+    li {
+      display: inline-block;
+      text-align: center;
+      width: 25%;
+      transition: .5s;
+      transition-delay: .1s;
+      @include media-breakpoint-up(md) {
+        width: 19%;
+      }
+      &:before {
+        content: none !important;
+      }
+      &:hover {
+        transform: rotateY(360deg);
+      }
+      svg {
+        width: 50px;
+        height: 55px;
+        padding: 10px 0 0 0;
+      }
+    }
+  }
+}

@@ -29,6 +29,7 @@ get_header(); ?>
 			<?php previous_post_link( '<div class="left">%link', '<i class="fa fa-arrow-left fa-fw"></i> %title</div>' ); ?>
 			<?php next_post_link( '<div class="right">%link', '%title<i class="fa fa-arrow-right fa-fw"></i> </div>' ); ?>
 		</nav>
+		<?php get_template_part('template-parts/related','post'); ?>
 	</main><!-- #main -->
 
 <?php
