@@ -130,7 +130,7 @@ function wordpress_template_scripts()
     wp_enqueue_script('barba', get_template_directory_uri() . '/assets/js/barba.min.js', array(), '20151215', true);
     wp_enqueue_script('barba-custom', get_template_directory_uri() . '/assets/js/barba-custom.min.js', array(), '20151215', true);
     wp_enqueue_script('smooth-scroll', get_template_directory_uri() . '/assets/js/smooth-scroll.min.js', array(), '20151215', true);
-    wp_enqueue_script('hiraku', get_template_directory_uri() . '/assets/js/smooth-scroll.min.js', array(), '20151215', true);
+    wp_enqueue_script('hiraku', get_template_directory_uri() . '/assets/js/hiraku.min.js', array(), '20151215', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
