@@ -80,6 +80,11 @@ c-nav
           list-style: none;
           border-bottom: 4px solid $base-black;
           padding: 1rem 0;
+          a{
+            display: block;
+            padding: 25px 0;
+            margin: -25px 0;
+          }
         }
       }
     }
