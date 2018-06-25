@@ -34,6 +34,7 @@ jQuery(function ($) {
             if(before > after) {
                 $('.js-header').removeClass('active');
                 $('.js-footer').removeClass('active');
+
             }
             else if(before < after) {
                 $('.js-header').addClass('active');

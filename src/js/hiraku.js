@@ -165,7 +165,7 @@ jQuery(function ($) {
                     $('.js-hiraku-offcanvas-body').removeClass('js-hiraku-offcanvas-body-moving');
                     $('html').css('marginTop', '');
                     window.scrollTo(winPos.x, winPos.y);
-                    var $btn = $('.js-hiraku-offcanvas-btn-active');
+                    var $btn = $('.js-hiraku-offcanvas-btn-active ');
                     $btn
                         .removeClass('js-hiraku-offcanvas-btn-active')
                         .attr('aria-expanded', false)
@@ -185,6 +185,14 @@ jQuery(function ($) {
             } else {
                 resizeHandler();
             }
+        });
+
+        $('.menu-item > a').click(function(){
+            $('.js-header').removeClass('menu');
+            $('.js-offcanvas').removeClass('active');
+            $('.js-hiraku-offcanvas').removeClass('js-hiraku-offcanvas-open');
+            $('.js-offcanvas-btn').attr('aria-expanded', false);
+            console.log('test');
         });
     }));
 
