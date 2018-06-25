@@ -305,6 +305,34 @@ function pagination($pages = '', $range = 2)
 	}
 }
 
+function btn_black($atts,$content=""){
+	extract(shortcode_atts(array(
+		'link' => '/'
+	), $atts));
+
+	return '<span class="c-btn__black"><a href="'.$link . '" target="_black">'."{$content}" .'</a></span>';
+}
+add_shortcode('btn_black', 'btn_black');
+
+function wbfunc1($atts){
+	extract(shortcode_atts(array(
+		'company' => 'ホワイトベアー株式会社',
+		'location' => '四谷'
+	), $atts));
+
+	return $company . 'は' . $location . 'にあります。';
+}
+add_shortcode('wbcode1', 'wbfunc1');
+
+function add_my_quicktag() { ?>
+	<script type="text/javascript">
+        QTags.addButton('btn_black', '黒ボタン', '[btn_black link=""]', '[/btn_black]','','', 1);
+        QTags.addButton('wbcode1', 'test', '[wbcode1]', '','','', 1);
+	</script>
+	<?php
+}
+add_action('admin_print_footer_scripts',  'add_my_quicktag');
+
 /*
  * ACF Options setting.
  *

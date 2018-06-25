@@ -1,0 +1,17 @@
+.c-btn__black {
+  background-color: $base-black;
+  color: $base-white;
+  padding: .5rem 1rem;
+  transition: .2s;
+  @include link_color($base-white) {
+    color: $base-white!important;
+    border-bottom: none!important;
+  }
+  &:hover{
+    background-color: $base-white;
+    border: 1px solid $base-black;
+    @include link_color($base-white) {
+      color: $base-black!important;
+    }
+  }
+}
