@@ -3,6 +3,9 @@
   @extend .col-md-8;
   @include typo;
   margin-bottom: 2rem;
+  h1,h2,h3{
+    word-wrap: break-word;
+  }
   .entry-header {
     overflow: hidden;
 

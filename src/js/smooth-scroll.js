@@ -32,12 +32,16 @@ jQuery(function ($) {
         $(window).scroll(function() {
             var after = $(window).scrollTop();
             if(before > after) {
-                $('.js-header').removeClass('active');
+                setTimeout(function(){
+                    $('.js-header').removeClass('active');
+                },100);
                 $('.js-footer').removeClass('active');
 
             }
             else if(before < after) {
-                $('.js-header').addClass('active');
+                setTimeout(function(){
+                    $('.js-header').addClass('active');
+                },100);
                 $('.js-footer').addClass('active');
 
             }
