@@ -192,6 +192,7 @@ jQuery(function ($) {
             $('.js-offcanvas').removeClass('active');
             $('.js-hiraku-offcanvas').removeClass('js-hiraku-offcanvas-open');
             $('.js-offcanvas-btn').attr('aria-expanded', false);
+            $('html').removeAttr('style');
             $('body').removeAttr('style').removeClass('js-hiraku-offcanvas-body-right');
             console.log('test');
         });
